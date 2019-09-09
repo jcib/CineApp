@@ -118,9 +118,15 @@ background-color: #4CAF50;
 
 #contenedor {
     background-color: #ddd;
+    font-size: 15px;
 }
 
 #firma {
     text-align: right;
     font-style: italic;
+}
+
+#chat {
+    text-align: center;
+    background-color: #ddd;
 }
