@@ -59,16 +59,18 @@ if (isset($_GET['id'])) {
   <?php echo escape($_POST['titulo']); ?> actualizada satisfactoriamente.
 <?php endif; ?>
 
-<h2>Editar una película</h2>
+<div id="contenedor">
+  <h2>Editar una película</h2>
 
-<form method="post">
-    <?php foreach ($user as $key => $value) : ?>
-      <label for="<?php echo $key; ?>"><?php echo ucfirst($key); ?></label>
-      <input type="text" name="<?php echo $key; ?>" id="<?php echo $key; ?>" value="<?php echo escape($value); ?>" <?php echo ($key === 'id' ? 'readonly' : null); ?>>
-    <?php endforeach; ?>
-    <input type="submit" name="submit" value="Submit">
-</form>
+  <form method="post">
+      <?php foreach ($user as $key => $value) : ?>
+        <label for="<?php echo $key; ?>"><?php echo ucfirst($key); ?></label>
+        <input type="text" name="<?php echo $key; ?>" id="<?php echo $key; ?>" value="<?php echo escape($value); ?>" <?php echo ($key === 'id' ? 'readonly' : null); ?>>
+      <?php endforeach; ?>
+      <input type="submit" name="submit" value="Submit">
+  </form>
 
-<a href="index.php">Volver atrás</a>
+  <a href="index.php">Volver atrás</a>
+</div>
 
 <?php require "templates/footer.php"; ?>
