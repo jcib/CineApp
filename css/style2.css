@@ -1,0 +1,15 @@
+#login {
+    text-align: center;
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 10px;
+    width: 200px;
+    height: 200px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cabecera {
+    text-align: center;
+}
