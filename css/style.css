@@ -112,6 +112,10 @@ background-color: #4CAF50;
     border-radius: 10%;
 }
 
+#imagen2 {
+    width: 250px
+}
+
 #list {
     display: flex;
     justify-content: center;
