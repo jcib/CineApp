@@ -24,8 +24,8 @@
 <div id="contenedor_grande">
     <body>
         <div id="cabecera">
-        <h1>EL RINCÓN DEL CINÉFILO</h1>
-        <hr width="70%"/>
+        <img id="imagen2" src="https://i.imgur.com/OMthexz.png" alt="header" />
+        <hr width="80%"/>
         <br/>
         </div>
     </body>
@@ -70,7 +70,7 @@
                         name = "login">Login</button>
                     </p>
                 </form>
-                Click <a href = "logout.php" tite = "Logout">aquí</a> para limpiar sesión.
+                Click <a href = "logout.php" tite = "Logout">aquí</a> para limpiar la sesión.
             </div> 
         </div>
         <div><img id ="img1" src="http://www.homerswebpage.com/images/jebusDance.gif" alt="Jesus dancing" height="200px" /></div>

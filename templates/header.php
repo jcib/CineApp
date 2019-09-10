@@ -15,10 +15,8 @@
 
   <body>
     <div id="cabecera">
-      <h1>EL RINCÓN DEL CINÉFILO</h1>
-      <hr/>
-      <p id="noticias">¡0.0.2 - Añadido soporte para móvil!</p>
-      <hr/>
+      <img id="imagen2" src="https://i.imgur.com/zLgU8v9.png" alt="header" />
+      <hr width="80%" />
     </div>
   </body>
 </html>
