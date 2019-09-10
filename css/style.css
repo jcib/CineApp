@@ -127,6 +127,10 @@ background-color: #4CAF50;
     font-style: italic;
 }
 
+#firma2 {
+    text-align: right;
+}
+
 #chat {
     text-align: center;
     background-color: #ddd;

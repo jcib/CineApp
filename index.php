@@ -49,6 +49,7 @@ if ($android || $bberry || $iphone || $ipod || $webos== true) {
     <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
   </div>
   <h6 id="firma">versión - 0.0.2</h6>
+  <h6 id="firma2"><a href="mailto:a18josibacuc@iam.cat">¡Enviar sugerencia!</a></h6> 
 </div>
 
 <?php include "templates/footer.php"; ?>
