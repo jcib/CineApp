@@ -73,6 +73,7 @@
                 Click <a href = "logout.php" tite = "Logout">aquí</a> para limpiar sesión.
             </div> 
         </div>
-        <img id ="imagen1" src="http://www.homerswebpage.com/images/jebusDance.gif" alt="Jesus dancing" height="200px" />
+        <div><img id ="img1" src="http://www.homerswebpage.com/images/jebusDance.gif" alt="Jesus dancing" height="200px" /></div>
+
     </div>
 </div>
