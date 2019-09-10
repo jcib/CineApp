@@ -58,11 +58,11 @@
                 action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
                 ?>" method = "post">
                 <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
-                <p>User</p>
+                <p>Usuario</p>
                 <input type = "text" class = "form-control" 
                 name = "username" 
                 required autofocus></br>
-                <p>Password</p>
+                <p>Contraseña</p>
                 <input type = "password" class = "form-control"
                 name = "password" required>
                 <p>
