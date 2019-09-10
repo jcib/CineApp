@@ -11,31 +11,19 @@
    }
 ?>
 
-<?php
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$bberry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-$webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-
-if ($android || $bberry || $iphone || $ipod || $webos== true) { 
-  header('location:index-mobile.php');
-}
-?>
-
 <div id="contenedor">
-  <ul id="list">
+  <ul>
     <li>
-      <a href="create.php"><strong>Introducir película en el sistema</strong></a>
+      <a href="create.php"><strong>Introducir</strong></a>
     </li>
     <li>
-      <a href="read.php"><strong>Buscar por director</strong></a>
+      <a href="read.php"><strong>Buscar</strong></a>
     </li>
     <li>
-      <a href="update.php"><strong>Lista de películas</strong></a>
+      <a href="update.php"><strong>Listar</strong></a>
     </li>
     <li>
-      <a href="delete.php"><strong>Borrar películas</strong></a>
+      <a href="delete.php"><strong>Borrar</strong></a>
     </li>
     <li>
       <a href="chat.php"><strong>Chat</strong></a>
@@ -43,7 +31,7 @@ if ($android || $bberry || $iphone || $ipod || $webos== true) {
   </ul>
 
   <div id="imagen">
-    <img id ="imagen1" src="https://media.giphy.com/media/GAQmPS2LbaEXm/giphy.gif" alt="12 hombres sin piedad" />
+    <img id ="imagen1" src="https://cadenaser00.epimg.net/ser/imagenes/2013/01/29/cultura/1359418635_740215_0000000000_noticia_normal.jpg" alt="12 hombres sin piedad" height="150px" width="200px" />
     <p></p>
     <a href="//24timezones.com/es_husohorario/barcelona_hora_actual.php" style="text-decoration: none" class="clock24" id="tz24-1568071699-c131-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsInNob3d0aW1lem9uZSI6IjAiLCJ0eXBlIjoiZCIsImxhbmciOiJlcyJ9" title="Reloj Mundial - Barcelona" target="_blank" rel="nofollow">Barcelona</a>
     <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>

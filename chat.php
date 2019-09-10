@@ -1,3 +1,26 @@
+<?php
+   session_start();
+   
+   $user_check = $_SESSION['username'];
+   
+   if(!isset($_SESSION['username'])){
+      header("location:login.php");
+      die();
+   }
+?>
+
+<?php
+$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+$bberry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+$webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+
+if ($android || $bberry || $iphone || $ipod || $webos== true) { 
+  header('location:chat-mobile.php');
+}
+?>
+
 <?php include "templates/header.php"; ?>
 
 <div id="contenedor">

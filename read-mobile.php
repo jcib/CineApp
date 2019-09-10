@@ -23,18 +23,6 @@
    }
 ?>
 
-<?php
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$bberry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-$webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-
-if ($android || $bberry || $iphone || $ipod || $webos== true) { 
-  header('location:read-mobile.php');
-}
-?>
-
 <?php 
     if (isset($_POST['submit'])) {
         try {
@@ -62,29 +50,15 @@ if ($android || $bberry || $iphone || $ipod || $webos== true) {
     if ($result && $statement->rowCount() > 0) { ?>
         <div id="contenedor">
             <h2>Resultados:</h2>
-
-            <table>
-            <thead>
-                <tr>
-                    <th>Titulo</th>
-                    <th>Director</th>
-                    <th>Sinopsis</th>
-                    <th>Valoración</th>
-                    <th>Comentario</th>
-                    </tr>
-                        </thead>
-                        <tbody>
-                    <?php foreach ($result as $row) { ?>
-                        <tr>
-                    <td><?php echo escape($row["titulo"]); ?></td>
-                    <td><?php echo escape($row["director"]); ?></td>
-                    <td><?php echo escape($row["sinopsis"]); ?></td>
-                    <td><?php echo escape($row["valoracion"]); ?></td>
-                    <td><?php echo escape($row["comentario"]); ?></td>
-                </tr>
+            <?php foreach ($result as $row) { ?>
+                
+                    <p><strong>Título:</strong> <?php echo escape($row["titulo"]); ?></p>
+                    <p><strong>Director:</strong> <?php echo escape($row["director"]); ?></p>
+                    <p><strong>Sinopsis:</strong> <?php echo escape($row["sinopsis"]); ?></p>
+                    <p><strong>Valoración:</strong> <?php echo escape($row["valoracion"]); ?></p>
+                    <p><strong>Comentario:</strong> <?php echo escape($row["comentario"]); ?></p>
+                    <p><hr></p>
             <?php } ?>
-            </tbody>
-            </table>
         </div>
     <?php } else { ?>
         > No hay resultados para <?php echo escape($_POST['director']); ?>.

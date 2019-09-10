@@ -109,7 +109,7 @@ background-color: #4CAF50;
 }
 
 #imagen1 {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #list {
@@ -130,4 +130,9 @@ background-color: #4CAF50;
 #chat {
     text-align: center;
     background-color: #ddd;
+}
+
+#noticias {
+    font-size: 10px;
+    font-style: italic;
 }

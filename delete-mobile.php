@@ -1,16 +1,4 @@
 <?php
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$bberry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-$webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-
-if ($android || $bberry || $iphone || $ipod || $webos== true) { 
-  header('location:delete-mobile.php');
-}
-?>
-
-<?php
 
 
 // Delete a user
@@ -53,32 +41,15 @@ try {
 
 <div id="contenedor">
     <h4>Borrar películas</h4>
-
-    <table id="customers">
-    <thead>
-        <tr>
-        <th>Título</th>
-        <th>Director</th>
-        <th>Sinopsis</th>
-        <th>Valoración</th>
-        <th>Comentario</th>
-        <th>#</th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($result as $row) : ?>
-        <tr>
-        <td><?php echo escape($row["titulo"]); ?></td>
-        <td><?php echo escape($row["director"]); ?></td>
-        <td><?php echo escape($row["sinopsis"]); ?></td>
-        <td><?php echo escape($row["valoracion"]); ?></td>
-        <td><?php echo escape($row["comentario"]); ?></td>
-        <td><a href="delete.php?id=<?php echo escape($row["id"]); ?>">Borrar</a></td>
-        </tr>
-    <?php endforeach; ?>
-    </tbody>
-    </table>
-
+    <?php foreach ($result as $row) { ?>
+      <p><strong>Título:</strong> <?php echo escape($row["titulo"]); ?></p>
+      <p><strong>Director:</strong> <?php echo escape($row["director"]); ?></p>
+      <p><strong>Sinopsis:</strong> <?php echo escape($row["sinopsis"]); ?></p>
+      <p><strong>Valoración:</strong> <?php echo escape($row["valoracion"]); ?></p>
+      <p><strong>Comentario:</strong> <?php echo escape($row["comentario"]); ?></p>
+      <a href="delete.php?id=<?php echo escape($row["id"]); ?>">Borrar</a></td>
+      <p><hr></p>
+    <?php } ?>
     <a href="index.php">Volver atrás</a>
 </div>
 

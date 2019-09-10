@@ -13,3 +13,11 @@
 #cabecera {
     text-align: center;
 }
+
+.container {
+    display: flex;
+}
+
+img {
+    margin-top: 25px;
+}

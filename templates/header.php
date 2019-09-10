@@ -17,6 +17,8 @@
     <div id="cabecera">
       <h1>EL RINCÓN DEL CINÉFILO</h1>
       <hr/>
+      <p id="noticias">¡0.0.2 - Añadido soporte para móvil!</p>
+      <hr/>
     </div>
   </body>
 </html>
