@@ -13,7 +13,7 @@
 
 <div id="contenedor2">
   <div class="dropdown">
-    <button class="dropbtn">Menú</button>
+    <button class="dropbtn">MENÚ DESPLEGABLE</button>
     <div class="dropdown-content">
       <a href="create.php"><strong>Introducir</strong></a>  
       <a href="read.php"><strong>Buscar</strong></a>
