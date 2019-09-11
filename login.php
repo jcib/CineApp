@@ -24,7 +24,7 @@
 <div id="contenedor_grande">
     <body>
         <div id="cabecera">
-        <img id="imagen2" src="https://i.imgur.com/OMthexz.png" alt="header" />
+        <img id="imagen2" src="https://i.imgur.com/OMthexz.png" alt="header" width="300px"; />
         <hr width="80%"/>
         <br/>
         </div>

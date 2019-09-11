@@ -11,24 +11,17 @@
    }
 ?>
 
-<div id="contenedor">
-  <ul>
-    <li>
-      <a href="create.php"><strong>Introducir</strong></a>
-    </li>
-    <li>
+<div id="contenedor2">
+  <div class="dropdown">
+    <button class="dropbtn">Menú</button>
+    <div class="dropdown-content">
+      <a href="create.php"><strong>Introducir</strong></a>  
       <a href="read.php"><strong>Buscar</strong></a>
-    </li>
-    <li>
       <a href="update.php"><strong>Listar</strong></a>
-    </li>
-    <li>
       <a href="delete.php"><strong>Borrar</strong></a>
-    </li>
-    <li>
       <a href="chat.php"><strong>Chat</strong></a>
-    </li>
-  </ul>
+    </div>
+  </div>
 
   <div id="imagen">
     <img id ="imagen1" src="https://cadenaser00.epimg.net/ser/imagenes/2013/01/29/cultura/1359418635_740215_0000000000_noticia_normal.jpg" alt="12 hombres sin piedad" height="150px" width="200px" />
